@@ -2,6 +2,7 @@ CREATE TABLE users (
   id INTEGER PRIMARY KEY AUTO_INCREMENT,
   email VARCHAR(100) NOT NULL UNIQUE,
   password VARCHAR(100) NOT NULL,
+  user_name VARCHAR(100) NOT NULL,
   self_introduction VARCHAR(100),
   mobile_number CHAR(13),
   company_tel CHAR(12),
