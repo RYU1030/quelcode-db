@@ -3,7 +3,7 @@ CREATE TABLE users (
   email VARCHAR(100) NOT NULL UNIQUE,
   password VARCHAR(100) NOT NULL,
   user_name VARCHAR(100) NOT NULL,
-  self_introduction VARCHAR(100),
+  self_introduction VARCHAR(1000),
   mobile_number CHAR(13),
   company_tel CHAR(12),
   created_at DATETIME NOT NULL,
@@ -15,7 +15,7 @@ CREATE TABLE users (
 
 CREATE TABLE chat_members (
   user_id INTEGER REFERENCES users (id),
-  chat_room_id INTEGER REFERENCES chat_room (id),
+  chat_room_id INTEGER REFERENCES chat_rooms (id),
   joined_at DATETIME NOT NULL
 );
 
@@ -34,7 +34,7 @@ CREATE TABLE chat_rooms (
 
 CREATE TABLE posts (
   id INTEGER PRIMARY KEY AUTO_INCREMENT,
-  chat_room_id INTEGER REFERENCES chat_room (id),
+  chat_room_id INTEGER REFERENCES chat_rooms (id),
   contents VARCHAR(1000) NOT NULL,
   file_name VARCHAR(100),
   created_at DATETIME NOT NULL,
@@ -46,7 +46,7 @@ CREATE TABLE posts (
 
 CREATE TABLE tasks (
   id INTEGER PRIMARY KEY AUTO_INCREMENT,
-  chat_room_id INTEGER REFERENCES chat_room (id),
+  chat_room_id INTEGER REFERENCES chat_rooms (id),
   task_detail VARCHAR(1000) NOT NULL,
   assigned_to INTEGER NOT NULL REFERENCES users (id),
   due_by DATETIME,
