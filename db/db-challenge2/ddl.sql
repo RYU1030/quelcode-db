@@ -18,7 +18,7 @@ CREATE TABLE chat_members (
   joined_at DATETIME NOT NULL
 );
 
-CREATE TABLE chat_room (
+CREATE TABLE chat_rooms (
   id INTEGER PRIMARY KEY AUTO_INCREMENT,
   room_name VARCHAR(100) NOT NULL,
   chat_overview VARCHAR(1000),
@@ -43,7 +43,7 @@ CREATE TABLE posts (
   delete_flag INTEGER DEFAULT 0 NOT NULL
 );
 
-CREATE TABLE task (
+CREATE TABLE tasks (
   id INTEGER PRIMARY KEY AUTO_INCREMENT,
   chat_room_id INTEGER REFERENCES chat_room (id),
   task_detail VARCHAR(1000) NOT NULL,
