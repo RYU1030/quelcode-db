@@ -7,9 +7,7 @@ CREATE TABLE users (
   mobile_number VARCHAR(13),
   company_tel_number VARCHAR(13),
   created_at DATETIME NOT NULL,
-  created_by INTEGER NOT NULL,
   updated_at DATETIME NOT NULL,
-  updated_by INTEGER NOT NULL,
   is_deleted TINYINT(1) DEFAULT 0 NOT NULL
 );
 
