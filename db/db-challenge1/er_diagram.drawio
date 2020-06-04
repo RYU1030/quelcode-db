@@ -1,6 +1,6 @@
-<mxfile host="www.draw.io" modified="2020-06-01T08:27:29.674Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.45.1 Chrome/78.0.3904.130 Electron/7.2.4 Safari/537.36" etag="VJ39LA5Bi8O0WuTnbia5" version="13.1.11">
+<mxfile host="www.draw.io" modified="2020-06-02T09:06:29.643Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.45.1 Chrome/78.0.3904.130 Electron/7.2.4 Safari/537.36" etag="f4wmBlDKx4XefAJxIN6n" version="13.1.12">
     <diagram id="6hGFLwfOUW9BJ-s0fimq" name="ER図">
-        <mxGraphModel dx="728" dy="445" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="1087" dy="581" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -37,8 +37,14 @@
                         <mxRectangle x="40" y="40" width="70" height="23" as="alternateBounds"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="48" value="ユーザID(FK)&lt;br&gt;&lt;br&gt;チャットルームID(FK)&lt;br&gt;&lt;br&gt;参加日時" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="40" vertex="1">
+                <mxCell id="48" value="ユーザID(CPK)&lt;br&gt;&lt;br&gt;チャットルームID(CPK)&lt;br&gt;&lt;br&gt;参加日時" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="40" vertex="1">
                     <mxGeometry x="10" y="29" width="150" height="71" as="geometry"/>
+                </mxCell>
+                <mxCell id="130" value="" style="endArrow=none;html=1;" edge="1" parent="40">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint y="77" as="sourcePoint"/>
+                        <mxPoint x="159" y="77" as="targetPoint"/>
+                    </mxGeometry>
                 </mxCell>
                 <mxCell id="76" value="" style="endArrow=none;html=1;" parent="1" source="77" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
