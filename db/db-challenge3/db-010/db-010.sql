@@ -31,4 +31,4 @@ LEFT JOIN
   chat_rooms AS CR
 ON
   CR.id = L.chat_room_id
-ORDER BY CR.id;
+ORDER BY CR.id ASC;

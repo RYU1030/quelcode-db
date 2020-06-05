@@ -7,4 +7,4 @@ SELECT id, room_name AS ルーム名, chat_overview AS 概要,
   updated_by AS 更新者ID, is_deleted AS 削除フラグ
 FROM chat_rooms
 WHERE is_deleted = 0 AND chat_overview LIKE '%ダイレクトチャット'
-ORDER BY id;
+ORDER BY id ASC;
